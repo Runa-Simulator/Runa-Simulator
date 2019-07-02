@@ -1,0 +1,286 @@
+fileFormatVersion: 2
+guid: 8ebae094de9fb9c4fb66b97d1ad73769
+timeCreated: 1525443853
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Armatur
+    100002: Beifahrersitz
+    100004: Bremspedal
+    100006: Cube
+    100008: Cylinder
+    100010: Cylinder.001
+    100012: Cylinder.002
+    100014: Cylinder.003
+    100016: Cylinder.004
+    100018: Cylinder.005
+    100020: Cylinder.006
+    100022: Cylinder.007
+    100024: Cylinder.008
+    100026: Cylinder.009
+    100028: Cylinder.010
+    100030: Cylinder.011
+    100032: Fahrersitz
+    100034: Gaspedal
+    100036: Innenteil
+    100038: Lenkradrad
+    100040: linkeAnzeige
+    100042: Logo
+    100044: mittlereAnzeige
+    100046: pizza_car_seperate
+    100048: //RootNode
+    100050: rechteAnzeige
+    100052: "R\xFCckbank"
+    100054: "R\xFCckspiegel"
+    100056: Sphere.001
+    100058: Stange
+    100060: Streifen links
+    100062: Streifen rechts
+    100064: Zeiger links
+    100066: Zeiger Mitte
+    100068: Zeiger rechts
+    100070: ZeigerAnkerLinks
+    100072: ZeigerAnkerMitte
+    100074: ZeigerAnkerRechts
+    400000: Armatur
+    400002: Beifahrersitz
+    400004: Bremspedal
+    400006: Cube
+    400008: Cylinder
+    400010: Cylinder.001
+    400012: Cylinder.002
+    400014: Cylinder.003
+    400016: Cylinder.004
+    400018: Cylinder.005
+    400020: Cylinder.006
+    400022: Cylinder.007
+    400024: Cylinder.008
+    400026: Cylinder.009
+    400028: Cylinder.010
+    400030: Cylinder.011
+    400032: Fahrersitz
+    400034: Gaspedal
+    400036: Innenteil
+    400038: Lenkradrad
+    400040: linkeAnzeige
+    400042: Logo
+    400044: mittlereAnzeige
+    400046: pizza_car_seperate
+    400048: //RootNode
+    400050: rechteAnzeige
+    400052: "R\xFCckbank"
+    400054: "R\xFCckspiegel"
+    400056: Sphere.001
+    400058: Stange
+    400060: Streifen links
+    400062: Streifen rechts
+    400064: Zeiger links
+    400066: Zeiger Mitte
+    400068: Zeiger rechts
+    400070: ZeigerAnkerLinks
+    400072: ZeigerAnkerMitte
+    400074: ZeigerAnkerRechts
+    2100000: Einhornhaar
+    2100002: Einhorn
+    2100004: Horn Gold
+    2100006: "Wei\xDF"
+    2100008: DunkelgrauArmatur
+    2100010: Brombeer
+    2100012: Mint
+    2100014: Auto
+    2100016: Schwarz
+    2100018: dunkelgrau
+    2100020: Runa Logo
+    2100022: Mint.001
+    2300000: Armatur
+    2300002: Beifahrersitz
+    2300004: Bremspedal
+    2300006: Cube
+    2300008: Cylinder
+    2300010: Cylinder.001
+    2300012: Cylinder.002
+    2300014: Cylinder.003
+    2300016: Cylinder.004
+    2300018: Cylinder.005
+    2300020: Cylinder.006
+    2300022: Cylinder.007
+    2300024: Cylinder.008
+    2300026: Cylinder.009
+    2300028: Cylinder.010
+    2300030: Cylinder.011
+    2300032: Fahrersitz
+    2300034: Gaspedal
+    2300036: Innenteil
+    2300038: Lenkradrad
+    2300040: linkeAnzeige
+    2300042: Logo
+    2300044: mittlereAnzeige
+    2300046: pizza_car_seperate
+    2300048: rechteAnzeige
+    2300050: "R\xFCckbank"
+    2300052: "R\xFCckspiegel"
+    2300054: Sphere.001
+    2300056: Stange
+    2300058: Streifen links
+    2300060: Streifen rechts
+    2300062: Zeiger links
+    2300064: Zeiger Mitte
+    2300066: Zeiger rechts
+    2300068: ZeigerAnkerLinks
+    2300070: ZeigerAnkerMitte
+    2300072: ZeigerAnkerRechts
+    3300000: Armatur
+    3300002: Beifahrersitz
+    3300004: Bremspedal
+    3300006: Cube
+    3300008: Cylinder
+    3300010: Cylinder.001
+    3300012: Cylinder.002
+    3300014: Cylinder.003
+    3300016: Cylinder.004
+    3300018: Cylinder.005
+    3300020: Cylinder.006
+    3300022: Cylinder.007
+    3300024: Cylinder.008
+    3300026: Cylinder.009
+    3300028: Cylinder.010
+    3300030: Cylinder.011
+    3300032: Fahrersitz
+    3300034: Gaspedal
+    3300036: Innenteil
+    3300038: Lenkradrad
+    3300040: linkeAnzeige
+    3300042: Logo
+    3300044: mittlereAnzeige
+    3300046: pizza_car_seperate
+    3300048: rechteAnzeige
+    3300050: "R\xFCckbank"
+    3300052: "R\xFCckspiegel"
+    3300054: Sphere.001
+    3300056: Stange
+    3300058: Streifen links
+    3300060: Streifen rechts
+    3300062: Zeiger links
+    3300064: Zeiger Mitte
+    3300066: Zeiger rechts
+    3300068: ZeigerAnkerLinks
+    3300070: ZeigerAnkerMitte
+    3300072: ZeigerAnkerRechts
+    4300000: Cube
+    4300002: Cylinder.011
+    4300004: Cylinder.010
+    4300006: Cylinder.009
+    4300008: Cylinder.008
+    4300010: Cylinder.007
+    4300012: Cylinder.006
+    4300014: Sphere.001
+    4300016: Cylinder.005
+    4300018: Cylinder.004
+    4300020: Cylinder.003
+    4300022: Cylinder.002
+    4300024: Cylinder.001
+    4300026: Cylinder
+    4300028: Gaspedal
+    4300030: Bremspedal
+    4300032: "R\xFCckspiegel"
+    4300034: "R\xFCckbank"
+    4300036: Beifahrersitz
+    4300038: Fahrersitz
+    4300040: pizza_car_seperate
+    4300042: rechteAnzeige
+    4300044: Armatur
+    4300046: linkeAnzeige
+    4300048: mittlereAnzeige
+    4300050: Zeiger links
+    4300052: Zeiger Mitte
+    4300054: Zeiger rechts
+    4300056: ZeigerAnkerLinks
+    4300058: ZeigerAnkerMitte
+    4300060: ZeigerAnkerRechts
+    4300062: Stange
+    4300064: Lenkradrad
+    4300066: Innenteil
+    4300068: Logo
+    4300070: Streifen links
+    4300072: Streifen rechts
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
