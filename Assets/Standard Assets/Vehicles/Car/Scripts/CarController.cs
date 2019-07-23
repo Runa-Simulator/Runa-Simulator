@@ -71,6 +71,16 @@ namespace UnityStandardAssets.Vehicles.Car
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
+        //selber programmiert
+        
+        private void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Ziel"))
+            {
+                Debug.Log("Richtiges Ziel erreicht");
+            }
+            Debug.Log("Ziel erreicht");
+        }
 
         private void GearChanging()
         {
@@ -137,8 +147,8 @@ namespace UnityStandardAssets.Vehicles.Car
                 m_WheelMeshes[i].transform.rotation = quat;
             }
 
-            Debug.Log("BeschleunigungOr: " + accel);
-            Debug.Log("BremseOr: " + footbrake);
+            //Debug.Log("BeschleunigungOr: " + accel);
+            //Debug.Log("BremseOr: " + footbrake);
 
             //clamp input values
             steering = Mathf.Clamp(steering, -1, 1);
@@ -146,9 +156,9 @@ namespace UnityStandardAssets.Vehicles.Car
             BrakeInput = footbrake = -1*Mathf.Clamp(footbrake, -1, 0);
             handbrake = Mathf.Clamp(handbrake, 0, 1);
 
-            Debug.Log("Beschleunigung: " + AccelInput);
+            //Debug.Log("Beschleunigung: " + AccelInput);
             
-            Debug.Log("Bremse: " + BrakeInput);
+            //Debug.Log("Bremse: " + BrakeInput);
             
 
             //Set the steer on the front wheels.
