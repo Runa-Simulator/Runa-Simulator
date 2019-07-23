@@ -29,12 +29,14 @@ public class Timer : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        // wenn Auto durch den Start fährt, Zeit starten.
         if (other.gameObject.CompareTag("RallyStart"))
         {
             start = true;
             startTime = Time.time;
         }
 
+        // Wenn Auto im Zielbereich, Zeit stoppen.
         if (other.gameObject.CompareTag("Ziel"))
         {
             start = false;
