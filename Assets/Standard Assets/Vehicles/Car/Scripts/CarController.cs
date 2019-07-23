@@ -80,6 +80,8 @@ namespace UnityStandardAssets.Vehicles.Car
                 Debug.Log("Richtiges Ziel erreicht");
             }
             Debug.Log("Ziel erreicht");
+
+            System.Diagnostics.Stopwatch stop;
         }
 
         private void GearChanging()
