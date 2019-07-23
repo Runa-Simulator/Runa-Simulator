@@ -4,20 +4,41 @@ using UnityEngine;
 
 public class Timer : MonoBehaviour {
 
+    public GameObject Zeitanzeige;
+    TextMesh anzeige;
     private float startTime;
+    private bool start = false;
 
 	// Use this for initialization
 	void Start () {
-        startTime = Time.time;
+        anzeige = Zeitanzeige.GetComponent<TextMesh>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        float t = Time.time - startTime;
+        if (start)
+        {
+            float t = Time.time - startTime;
 
-        string minutes = ((int) t / 60).ToString();
-        string seconds = (t % 60).ToString("f0");
+            string minutes = ((int)t / 60).ToString();
+            string seconds = (t % 60).ToString("f2");
 
-        Debug.Log(minutes + ":" + seconds);
+            anzeige.text = minutes + " : " + seconds;
+        }
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("RallyStart"))
+        {
+            start = true;
+            startTime = Time.time;
+        }
+
+        if (other.gameObject.CompareTag("Ziel"))
+        {
+            start = false;
+            anzeige.color = Color.yellow;
+        }
+    }
 }

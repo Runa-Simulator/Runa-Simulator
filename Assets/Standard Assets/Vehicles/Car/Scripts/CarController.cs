@@ -71,19 +71,6 @@ namespace UnityStandardAssets.Vehicles.Car
             m_CurrentTorque = m_FullTorqueOverAllWheels - (m_TractionControl*m_FullTorqueOverAllWheels);
         }
 
-        //selber programmiert
-        
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.gameObject.CompareTag("Ziel"))
-            {
-                Debug.Log("Richtiges Ziel erreicht");
-            }
-            Debug.Log("Ziel erreicht");
-
-            System.Diagnostics.Stopwatch stop;
-        }
-
         private void GearChanging()
         {
             float f = Mathf.Abs(CurrentSpeed/MaxSpeed);
