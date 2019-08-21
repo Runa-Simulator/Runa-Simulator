@@ -13,6 +13,8 @@ TagManager:
   - Car
   - Traffic_Light1
   - Traffic_Light2
+  - Ziel
+  - RallyStart
   layers:
   - Default
   - TransparentFX

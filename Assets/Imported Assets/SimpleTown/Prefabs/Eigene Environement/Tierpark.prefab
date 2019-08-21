@@ -1529,7 +1529,6 @@ GameObject:
   - component: {fileID: 4366910687612640}
   - component: {fileID: 33817626264883500}
   - component: {fileID: 23199917467287430}
-  - component: {fileID: 64178323209451822}
   m_Layer: 0
   m_Name: Fence_Timber_Large_02 1
   m_TagString: Untagged
@@ -8554,8 +8553,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017968201065602}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.53, y: 0.0016174, z: 514.98}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 16.51, y: -165.19, z: 54.709}
   m_LocalScale: {x: 9, y: 1, z: 8}
   m_Children:
   - {fileID: 4406460393816416}
@@ -13877,20 +13876,6 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1772049457684268}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 14
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300002, guid: f6b772f8e16cf1040a7e1a2d870ae136, type: 3}
---- !u!64 &64178323209451822
-MeshCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1238108201383554}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1

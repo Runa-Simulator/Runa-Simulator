@@ -12,7 +12,7 @@ public class EnterCar2 : MonoBehaviour {
 
 	private int enterRange = 3;
 	private float distance;
-	private CarController controllerCar;
+	private CarDrive controllerCar;
 	private CarUserControl carUserCtrl;
 	private CarAudio audioCar;
 	private AudioSource carAudioSource;
@@ -21,7 +21,7 @@ public class EnterCar2 : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		carCamera.gameObject.SetActive (false);
-		controllerCar = (CarController) GetComponent("CarController");
+		controllerCar = (CarDrive) GetComponent("CarController");
 		carUserCtrl = (CarUserControl) GetComponent("CarUserControl");
 		audioCar = (CarAudio) GetComponent("CarAudio");
 		carAudioSource = (AudioSource) GetComponent("AudioSource");
