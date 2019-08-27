@@ -13,11 +13,13 @@ public class Timer : MonoBehaviour {
     private float penaltyTime;
     private bool penalty = false;
     private float p = 0;
+    private float pTotal = 0;
     private float t = 0;
     string minutes;
     string seconds;
     string p_minutes;
     string p_seconds;
+
 
 	// Use this for initialization
 	void Start () {
@@ -39,14 +41,29 @@ public class Timer : MonoBehaviour {
 
             if (penalty)
             {
-                p += Time.time - penaltyTime;
+                p = Time.time - penaltyTime + pTotal;
+
+                // Code doppelt. Könnte noch in eine Funktion mit Parameter (p oder pTotal) ausgelagert/optimiert werden.
                 p_minutes = ((int)p / 60).ToString();
-                p_seconds = (p % 60).ToString("f1");
+                p_seconds = (p % 60).ToString("f2");
 
                 strafzeitanzeige.text = "+ " + p_minutes + " : " + p_seconds;
+            } else
+            {
+                if (p > 0)
+                {
+                    pTotal = p;
+                    p = 0;
+
+                    // Code doppelt. Könnte noch in eine Funktion mit Parameter (p oder pTotal) ausgelagert/optimiert werden.
+                    p_minutes = ((int)pTotal / 60).ToString();
+                    p_seconds = (pTotal % 60).ToString("f2");
+
+                    strafzeitanzeige.text = "+ " + p_minutes + " : " + p_seconds;
+                }
             }
+
         }
-        penalty = false;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -64,13 +81,8 @@ public class Timer : MonoBehaviour {
             start = false;
             zeitanzeige.color = Color.yellow;
 
-            Debug.Log("Minuten: " + minutes);
-            Debug.Log("Sekunden: " + seconds);
-            Debug.Log("P Minuten: " + p_minutes);
-            Debug.Log("P Sekunden: " + p_seconds);
-
-            minutes = (((int)t / 60) + ((int)p / 60)).ToString();
-            seconds = ((t % 60) + (p % 60)).ToString("f2");
+            minutes = (((int)t / 60) + ((int)pTotal / 60)).ToString();
+            seconds = ((t % 60) + (pTotal % 60)).ToString("f2");
 
             zeitanzeige.text = minutes + " : " + seconds;
             strafzeitanzeige.text = " ";
@@ -81,9 +93,17 @@ public class Timer : MonoBehaviour {
         // während Auto auf Wasser ist
         if (other.gameObject.CompareTag("Wasser"))
         {
-            Debug.Log("Strafzeit");
-            penalty = true;
-            penaltyTime = Time.time;
+
+            if (!penalty)
+            {
+                penalty = true;
+                penaltyTime = Time.time;
+            }
+        } else if (penalty)
+        {
+            penalty = false;
         }
     }
 }
+
+
