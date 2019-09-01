@@ -15,6 +15,7 @@ TagManager:
   - Traffic_Light2
   - Ziel
   - RallyStart
+  - Wasser
   layers:
   - Default
   - TransparentFX

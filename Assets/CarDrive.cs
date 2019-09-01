@@ -21,6 +21,9 @@ namespace UnityStandardAssets.Vehicles.Car
         private Rigidbody rb;
         public Transform centreofmass;
         private float maxTorque = 2000;
+        float currentSpeed = 0;
+
+
         void Start()
         {
             rb = GetComponent<Rigidbody>();
@@ -36,15 +39,16 @@ namespace UnityStandardAssets.Vehicles.Car
                 WheelRL.brakeTorque = 0;
                 WheelRR.brakeTorque = 0;
             }
-            //speed of car, Car will move as you will provide the input to it.
 
-            WheelRR.motorTorque = maxTorque * Input.GetAxis("Vertical");
-            WheelRL.motorTorque = maxTorque * Input.GetAxis("Vertical");
+            ////speed of car, Car will move as you will provide the input to it.
+
+            WheelRR.motorTorque = maxTorque * Input.GetAxis("Pedal");
+            WheelRL.motorTorque = maxTorque * Input.GetAxis("Pedal");
 
             //changing car direction
             //Here we are changing the steer angle of the front tyres of the car so that we can change the car direction.
-            WheelFL.steerAngle = 30 * (Input.GetAxis("Horizontal"));
-            WheelFR.steerAngle = 30 * Input.GetAxis("Horizontal");
+            WheelFL.steerAngle = 30 * (Input.GetAxis("Lenken"));
+            WheelFR.steerAngle = 30 * Input.GetAxis("Lenken");
         }
         void Update()
         {
