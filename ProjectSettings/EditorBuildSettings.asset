@@ -8,6 +8,6 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: c80ade78bf016f84fa3c75f1428a98af
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Melu_Semesterprojekt.unity
     guid: 635d1e98d4ec13544a71e844559bee6f
