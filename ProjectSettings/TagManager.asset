@@ -16,6 +16,8 @@ TagManager:
   - Ziel
   - RallyStart
   - Wasser
+  - StartZiel
+  - AutoStart
   layers:
   - Default
   - TransparentFX
@@ -29,7 +31,7 @@ TagManager:
   - Minimap
   - Quest
   - Car
-  - 
+  - Zieleinfahrt
   - 
   - 
   - 
